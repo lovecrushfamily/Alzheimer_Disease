@@ -37,4 +37,4 @@ stratified sampling for train and test set
 
 
 
-Explain skewness, std, correlation
+Explain skewness, std, correlation, kurtosis, variance

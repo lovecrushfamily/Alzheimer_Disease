@@ -1,0 +1,167 @@
+Build 1 web page để run cái đống model kia, tiện thể quay lại web 1 chút với flask, steamlit
+
+trên web đó sẽ là 1 web kiểu chuẩn đoán rất nhiều bệnh
+- Thận nè
+- Alzheimer nè
+- 
+
+Trên web có những cái form, có thể load được 1 người đơn lẻ hoặc 1 file csv, excel, nhưng phải có preview trước cơ. và có thể chọn được model để mình predict, coi như những con bot của các bác sĩ.
+
+Cuối cùng thì phân tích những hiệu quả, hành vi của từng model trên các bộ dữ liệu khác nhau. với những con số khác nhau.
+
+*Làm thêm phần hyperparameter và SMote for class imbalances
+
+adding all the problems into your dataset and find a way to solve it. like what I am
+
+
+dataleakage
+multicolinearity
+similarity and dissimilarity
+
+dimensionality reduction     => PCA, LinearDiscriminatorAnalysis
+
+Feature extraction
+feature selection
+
+Feature creation : cai nay kho, tao ra feature, feature engineering
+
+
+
+Imbalanced class handled.
+
+stratified sampling for train and test set
+
+
+
+Explain skewness, std, correlation, kurtosis, variance
+
+
+
+
+
+
+
+
+
+
+The only difference is that make_pipeline generates names for steps automatically.
+
+Step names are needed e.g. if you want to use a pipeline with model selection utilities (e.g. GridSearchCV). With grid search you need to specify parameters for various steps of a pipeline:
+
+pipe = Pipeline([('vec', CountVectorizer()), ('clf', LogisticRegression()])
+param_grid = [{'clf__C': [1, 10, 100, 1000]}
+gs = GridSearchCV(pipe, param_grid)
+gs.fit(X, y)
+
+compare it with make_pipeline:
+
+pipe = make_pipeline(CountVectorizer(), LogisticRegression())     
+param_grid = [{'logisticregression__C': [1, 10, 100, 1000]}
+gs = GridSearchCV(pipe, param_grid)
+gs.fit(X, y)  
+
+So, with Pipeline:
+
+    names are explicit, you don't have to figure them out if you need them;
+    name doesn't change if you change estimator/transformer used in a step, e.g. if you replace LogisticRegression() with LinearSVC() you can still use clf__C.
+
+make_pipeline:
+
+    shorter and arguably more readable notation;
+    names are auto-generated using a straightforward rule (lowercase name of an estimator).
+
+When to use them is up to you :) I prefer make_pipeline for quick experiments and Pipeline for more stable code; a rule of thumb: IPython Notebook -> make_pipeline; Python module in a larger project -> Pipeline. But it is certainly not a big deal to use make_pipeline in a module or Pipeline in a short script or a notebook.
+
+
+
+
+
+
+
+Create traning pipeline and inferences pipeline
+
+
+training pipeline => fit method
+
+inferences pipeline => predict method
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------
+What was saved in the pickle model
+How to bring model in production
+file pickle lưu cái j bên trong ms đc chứ lại.
+
+
+
+
+
+
+
+Using association rule mining to finding frequent pattern and using the pattern and support to create new feature
+
+Sử dụng cái pattern đấy để predict, evaluated được cái y_preidct - khó đây
+
+rồi còn phải visualize ra những  cái gì nó hay đi với nhau nữa đấy, để biết đường nhìn ra triệu trứng của căn bệnh này, khai phá luật đi.
+
+
+
+--------------------------------------------------------------------------------
+
+Ở bước preprocessing thì mình gọi hết những thứ mình có thể làm ra, và testing cho nó, 
+xong xuống bước modeling thì mình cứ combine, mix chúng nó lại với nhau, thay thể các tham số nữa,
+Sử dụng gridsearch -> fit trực tiếp X và y vào, và để cho quá trình, pipeline training làm việc còn lại
+
+evaluate kết quả, muốn giảm recall thì làm sao, muốn giảm precision và tăng recall thì sao?
+
+
+
+
+Show off tất cả các biện pháp sử lý dữ liệu, biến đổi dữ liệu, rồi từ đó biến nó thành những cái có thể thay thế, tùy chỉnh tham số ở bước sử
+dụng gridsearch cuối cùng.
+
+
+
+
+
+Khởi tạo 1 inferences pipeline nữa.
+
+
+
+
+
+
+
+
+Sống trong một giả định về 1 tương lai mơ hồ trước mắt, thực sự không phải là phong cách của anh.
+
+
+
+
+
+
+
+
+Tuc laf minhf se rajo ra 1 cais pipeline xong keet hopwj nois voiws grid GridSearchCV
+
+Nhuwng maf chir fit thooi, traning pipeline laf chir fit thooi, xong sau ddos mang cais model ddayas ddi cross validation
+ validate nos banwgf 1 hamf khacs
+
+
+
+
+khoong, khos, khoong keets hopwj maays cais pipeline laji vs nhau duowjc ddaua, duwx lieuej buoojc phair cos 1 pipeline procesisng rieneg, sau ddos mowis duwa vaoof grid
+search  sau ddos dungf 1 hamgf khacs ddeer evaludate laji model
+
+
+
+
+
+

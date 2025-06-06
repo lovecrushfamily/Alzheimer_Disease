@@ -1,0 +1,26 @@
+Không paste code vào báo cáo hay bất cứ slide trình bày nào., Báo cáo kết quả, quy trình
+Trích dẫn ở cuối trang thì phải có trích ở trong phần nội dung, không lôi được trích dẫn ra thì không nhét nó vào.
+Cơ sở lý thuyết thì cần trình bày công thức không cần code
+
+Đối với mô hình thì quan trọng bộ tham số hơn, 
+
+
+Khi thuyết trình thì mình sẽ kể 1 câu chuyện dựa trên topic của mình
+
+
+1 project cần có demo app,deploy được thì càng tốt, slides presentation, word report, latex paper (Mang tính academic khá nhiều), source code, readme intro (File Readme thì cần nói về cách sử dụng source code),
+
+Rất nhiều thứ đi kèm, và mình thực sự cần 1 cái pipeline oke hơn.
+
+
+Khi thực hiện xử lý 1 bộ dataset thì mình cần show những gì, học những gì
+
+truớc tiên bắt đầu từ 1 bộ data set đẹp, -> đưa vào train đưọc luôn, -> evaluation mettric luôn và hyper para luôn, 
+
+Còn với những bộ dữ liệu mà nó nhiều thứ để xử lý ấy, thì chia thành các stage riêng, từ cleaning, preprocesisng, transforming.
+
+sau bất kì 1 bưóc xử lý nào cx phải evaluate lại mấy cái metric. đây là với ML truyền thống, 
+
+Vói những buớc như hyperparameter thì cần luư lại 1 số sự thay đổi để còn vẽ biểu đồ, cách mà mô hình học đưọc khi có sự thay đổi.
+
+Monitor hết những cái đấy. để có thể hiểu thêm về sụe thay đổi của tham số ảnh hưỏng đến performance của model.

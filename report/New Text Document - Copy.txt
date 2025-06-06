@@ -1,0 +1,14 @@
+data science tập trung vào việc sử lý dữ liệu để tạo ra tri thức:(thông tin, chiến lược, insight, decision, knowledge)
+
+big data tập trung vào việc làm sao để xử lý dữ liệu lớn 1 cách hiệu quả,
+
+cách tiếp cận về mặt kỹ thuật là khác nhau
+
+
+mô hình hóa dữ liệu , hiểu được cách mà dữ liệu được tổ chức, dữ liệu rời rạc thì ko biết được mô hình của dữ liệu
+Sử dụng các thuật toán học máy để có thể mô hình được dữ liệu, 
+tại sao phải là các thuật toán học máy, nếu chỉ nói đơn thuần là thuật toán vẫn rất chung chung và chưa đủ, các thuật toán bình thường như kiểu algorithm giải thuật các chứ chỉ tập trung vào việc problem-solving thôi.
+ Còn để có thể mô hình hóa được dữ liệu thì buộc phải động chạm đến toán học, toán học chính là thứ được sử dụng để biểu diễn cho dữ liệu, chính vì vậy nên ms nói chỉ có thuật toán học máy ms có thể mô hình hóa được dữ liệu, vì các thuật toán đó lấy lý thuyết toán học, xác suất thống kê làm để tảng để biểu diễn dữ liệu, là phần giao giữa thuật toán và toán học.
+
+
+https://github.com/Harvard-IACS/2021-CS109A.git
